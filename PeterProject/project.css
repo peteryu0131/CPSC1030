@@ -1,0 +1,426 @@
+#wrapper {
+	width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color:rgba(113, 221, 4, 0.671);
+}
+body{
+    background-image: url(photos/background.jpg);
+
+}
+
+
+header { 
+    background-image: url(photos/homebig.jpg);
+    text-align: center;
+    font-size: 2.3em;
+    border:3px white solid;
+    grid-area: header;
+    
+}	
+
+nav{
+    padding-top: 15px;
+    font-size: 1.25em;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    grid-area: nav;
+
+}
+nav a {
+    text-decoration: none; 
+    padding: 20px;
+    display: block;
+    border-bottom: 1px solid white;
+    
+}
+
+nav a:visited { 
+    color:rgb(12, 41, 138);
+}
+
+nav a:hover { 
+    color:yellow; 
+    background-color: cadetblue;
+} 
+nav a:active{
+    color:red;
+}
+nav ul { 
+	list-style-type: none;
+    padding-left: 0;  
+}
+
+aside{
+    text-align: center;
+    font-size: 0.9em;
+    padding-top: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    grid-area: aside;
+}
+
+main{
+    padding: 10px;
+    background-color: aliceblue;
+    grid-area: main;
+}
+
+footer{
+        text-align: center;
+        background-color: aliceblue;
+        grid-area: footer;
+        font-size: 8px;
+        padding: 0;
+    }
+.aside{
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+    color:rgb(12, 41, 138);
+    text-align: center;
+    
+}
+h1{
+    margin: 0;
+    padding:10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+h2{
+    text-align: center;
+    padding: 7px;
+    background-color: rgba(113, 221, 4, 0.671);
+    color:rgb(12, 41, 138);
+    font-size: 2.3em;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 1.3em;
+}
+
+
+h3{
+    border-bottom: 2px solid salmon;
+    font-size: 1.6em;
+}
+h4{
+    margin-right: 35%;
+    font-size: 1.3em;
+}
+
+
+
+
+.gameall{
+    
+   width: 270px;
+   float:right;
+   padding: 1em;    
+   
+}
+
+
+
+
+
+
+
+.food{
+    color:rgb(12, 41, 138);
+    padding: 0.5em;
+    background-color: rgba(113, 221, 4, 0.671);
+
+}
+
+.pgame {
+    padding: 0.5em;
+    background-color:white;
+    margin-left: 0.5em;
+    margin-right: 21em;
+}
+.foodimg{
+    
+    padding-top: 0.7em;
+    width: 100%;
+}
+
+.contactimg{
+    float: right;
+    padding-right: 4em;
+    padding-top: 1.5em;
+    width:40%;
+    
+}
+.hotelimg{
+
+    width: 100%;
+}
+
+p{
+    background-color: white;
+    margin: 1.5em;
+    padding: 1em;
+    font-size: 1.3em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.paside{
+    background-color: rgba(113, 221, 4, 0.671);
+    margin: 0.7em;
+    font-size: 1.1em;
+    
+}
+
+
+.event{
+    width: 100%;
+}
+
+.homecamp{
+    width: 100%;
+    
+}
+video{
+    width: 80%;
+    margin-left:10%;  
+}
+
+.jump{
+    padding: 5px;
+    margin-right: 78%;
+    text-align: center;
+    border: 1.5px solid red;
+    padding-top: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1000px) {
+    #wrapper{
+        display: grid;
+        grid-gap: 5px;
+        grid-template: 
+        'header header header' auto
+        'nav  main aside'   auto
+        'nav footer aside'  auto/
+        150px  1fr 160px; 
+    }
+    .sportssmall{
+        display: none;
+    }
+
+    table, th, td {
+        border: 1.3px solid blue;
+        margin: auto;
+        margin-bottom: 20px;
+        border-collapse: collapse;  
+    }
+    td {
+        padding: 4px;
+        text-align: center;
+    }
+    th{
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    
+    .item{
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(113, 221, 4, 0.671);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+
+    #wrapper{
+        width:95%;
+        display: grid;
+        grid-gap: 5px;
+        grid-template: 
+        'header ' auto
+        'nav  '   auto
+        'main   '   auto
+        'aside  '  auto
+        'footer'  auto/
+        1fr ; 
+    }
+
+    main{
+        width: auto;
+    }
+    nav {
+        width: auto;
+       
+    }
+    aside{
+        width: auto;
+        padding: 0;
+       
+    }
+    span{
+        font-size: 0.7em;
+    }  
+
+    .hotelimg,.homeresort,.homecamp,table,.foodimg,.sportssmall{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    nav{
+        text-align: center;
+        padding: 0;
+    }
+    .contactimg,video,.jump,.hotelimg,.gameall,e{
+        display: none;
+    }
+    .pgame{
+        margin: 0;
+    }
+
+    h2{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        color:rgb(12, 41, 138);
+        font-size: 1.3em;
+        font-family: 'Jokerman', fantasy;   
+    }
+    p{
+        padding: 10px;
+        margin: 0;
+    }
+   
+    h1{
+        margin: 0;
+        padding:5px;
+        font-size: 1.4em;
+        font-family: 'Lucida Sans',Geneva,sans-serif;
+    }
+    h3{
+        font-size: 1.3em;
+    }
+    
+    table, th, td {
+        border: 1.3px solid blue;
+        margin: auto;
+        margin-bottom: 10px;
+        border-collapse: collapse;  
+    }
+    td {
+         text-align: center;
+    }
+    th{
+        font-size: 1em;
+    }
+    .item{
+        text-align: center;
+        background-color: rgba(113, 221, 4, 0.671);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    form{
+        padding: 2em;
+        padding-top: 2.5em;
+    }
+    label {
+        float: left;
+        display:block;
+        text-align: right;
+        width: 8em;
+        padding-right: 1.5em;
+    }
+
+    input,textarea{
+        display: block;
+        margin-bottom: 2em;
+    }
+
+    #apply{
+        margin-left: 11em;
+       margin-top: 1em;
+    }
+
+
+    
+    

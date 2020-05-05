@@ -1,0 +1,320 @@
+#wrapper{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+
+    border: solid 2px black;
+    border: solid 1px white;
+    background-color: seagreen;
+    opacity: 0.8;
+}
+body{
+	background-color: #ffefd5;
+    background-image: url(images/home/i4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+	
+}
+aside{
+    text-align: center;
+	font-size: 20px;
+	background-color: tan;
+	margin-left: 80px;
+	margin-right: 80px;
+    margin-top: 20px;
+    grid-area: aside;
+    float: right;
+    width: 150px;
+    padding-right: 65px;
+    border:solid 1px grey;
+}
+nav a:hover{ 
+	color: red;
+	font-weight: bold;
+}	
+#mail:hover{
+	color: blue;
+}
+h1{
+	background-color: whitesmoke;
+	color: teal;
+	text-align: center;
+	font-size: 45px;
+	margin: 10px;
+	border: 1px solid ;	
+}
+nav{
+	text-align: center;
+	margin-left: 80px;
+	margin-right: 80px;
+	background-color: antiquewhite;
+	border: 1px solid antiquewhite;
+    font-size: 5px;
+	grid-area: nav;
+}
+nav ul li{
+    display:inline-block;    
+}
+nav li{
+    list-style-type: none;
+    padding: 0;
+}
+nav a{
+	text-decoration: none;
+	font-style: oblique;
+	font-size: 25px;
+	font-weight: bold;
+    padding-right: 20px;
+	color: black;
+	text-align: center;
+}
+footer{
+	grid-area: footer;
+	margin-left: 80px;
+	margin-right: 80px;
+	background-color: antiquewhite;
+	border: 1px solid antiquewhite;
+    font-size: 15px;
+    text-decoration: none;
+	font-style: oblique;
+	font-weight: bold;
+    padding-right: 20px;
+	color: black;
+	text-align: center;
+}
+#image1{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+#rooms{
+    display: block;
+    margin: 0;
+	padding-left: 100px;
+	width: 80%;
+}
+main{
+	grid-area: main;
+
+
+}
+h2{
+	color: teal;
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+	background-color: tan;
+	border: 2px solid tan;
+	margin-left: 80px;
+	margin-right: 80px;		
+}
+#intro{
+	
+	text-align: center;
+	font-size: 20px;
+	background-color: tan;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+#para{
+    font-weight: bold;
+footer{
+    background-color: whitesmoke;
+    border: 0.5px solid teal;
+	margin-top: 50px;
+	font-size: 20px;
+	font-style: italic;
+	text-align: center;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-right: 20px;	
+	clear: right;
+	grid-area: footer;
+}
+
+@media only screen and (max-width: 1024px){
+	#wrapper{
+		margin: 0;
+		padding: 0;
+		width: auto;
+		display:grid;
+		grid-template:
+		'header    header    ' auto
+		'nav       nav       ' auto
+		'main      aside     ' auto
+		'footer    footer    '  /
+			1fr;  
+	}
+	body{
+		background-color: #fff05f;
+		margin: 0;
+        background-image: url(images/home/i4.jpg)
+	}
+	nav a{
+		display: block;
+	}
+	nav{
+		margin:2px;
+	}
+	nav a:hover{
+		color:black;
+		
+	}
+	h1{
+		font-size: 25px;
+		font-weight: bold;
+		border: 2px solid red;
+	}
+	h2{
+		font-size: 20px;
+		font-weight: bold;
+		border: 2px solid green;
+	}
+	#intro{
+		font-size: 20px;
+	}
+	#image1{
+		width: 100%;
+		display: block;
+	}
+	#rooms {
+		margin: 0;
+		padding: 0;
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+	#wrapper{
+		margin: 0;
+		padding: 0;
+		width: auto;
+		display: grid;
+		grid-template:
+		'header' auto
+		'nav   ' auto
+        'aside ' auto
+		'main  ' auto
+		'footer'  /
+			1fr;  
+	}
+
+
+	nav{
+		margin:2px;
+	}
+	nav a:hover{
+		color:black;
+		
+	}
+	h1{
+		font-size: 25px;
+		font-weight: bold;
+		border: 2px solid red;
+	}
+	h2{
+		font-size: 20px;
+		font-weight: bold;
+		border: 2px solid green;
+	}
+	#intro{
+		font-size: 20px;
+		padding: 0;
+		margin: 0;
+	}
+	#image1{
+		width: 100%;
+		display: none;
+	}
+	#rooms {
+		margin: 0;
+		padding: 0;
+		display: block;
+	}
+	main{
+	grid-area: main;
+	padding: 0;
+	margin: 0;
+	}
+}
+
+#mobile {
+    display: inline;
+}
+#desktop {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form{
+        padding: 2em;
+        padding-top: 2.5em;
+    }
+    label {
+        float: left;
+        display:block;
+        text-align: right;
+        width: 8em;
+        padding-right: 1.5em;
+    }
+
+    input,textarea{
+        display: block;
+        margin-bottom: 2em;
+    }
+
+    #apply{
+        margin-left: 11em;
+       margin-top: 1em;
+    }
+
+
+
+
+table {
+    text-align: center;
+	font-size: 20px;
+	background-color: tan;
+	margin-left: 80px;
+	margin-right: 80px;
+    border-collapse: collapse;
+    width: 400px;
+}
+td {
+    text-align: center;
+}
+
+
+    
